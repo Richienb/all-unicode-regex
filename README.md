@@ -1,41 +1,24 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# All Unicode Regex [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/all-unicode-regex/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/all-unicode-regex)
 
-My awesome module.
+A regex which matches all unicode characters.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/all-unicode-regex.png)](https://npmjs.com/package/all-unicode-regex)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install all-unicode-regex
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const allUnicodeRegex = require("all-unicode-regex");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+"a😃中文".replace(allUnicodeRegex, ".");
+//=> '....'
 ```
 
 ## API
 
-### theModule(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+### allUnicodeRegex

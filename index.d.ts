@@ -1,14 +1,13 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * A regex which matches all unicode characters.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const allUnicodeRegex = require("all-unicode-regex");
+ *
+ * "a😃中文".replace(allUnicodeRegex, ".");
+ * //=> '....'
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare const allUnicodeRegex: RegExp
 
-export = theModule;
+export = allUnicodeRegex
